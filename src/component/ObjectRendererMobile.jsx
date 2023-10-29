@@ -48,7 +48,7 @@ function ObjectRenderer() {
             >
               {item.details}
             </p>
-            <button style={{ borderRadius: "50px", padding: "12px 20px", }}>
+            <button style={{ borderRadius: "50px", padding: "12px 20px", background:'#1ED760', }}>
               <a className="link" href={item.link}>
                 <img style={{ width: "80px" }} src={spotify} alt="Spotify" />
               </a>
