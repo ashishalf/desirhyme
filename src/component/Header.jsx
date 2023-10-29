@@ -11,12 +11,12 @@ function Header() {
             HIPHOP <br /> <span style={{ fontSize: isMobile ? '10px' : '15px' }}>BY @ASHISHALF</span>
           </h2>
         </div>
-        <a href="https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym">
+        <a href="https://github.com/ashishalf/hiphop/blob/main/README.md">
           <img
             width={isMobile ? 40 : 58}
             height={isMobile ? 40 : 58}
-            src="https://img.icons8.com/fluency/48/spotify.png"
-            alt="spotify"
+            src="https://img.icons8.com/3d-fluency/94/github.png"
+            alt="github"
           />
         </a>
       </div>
