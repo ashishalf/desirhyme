@@ -1,9 +1,17 @@
 // data.js
 const data = [
+    {
+    title: "Talha Yunus",
+    details:
+      "Talhah Yunus is a Pakistani rapper, filmmaker and musician. He graduated from the National College of Arts in filmmaking. He is a part of the hip-hop duo Young Stunners along with Talha Anjum, having the music producer Jokhay. He was born and raised in Karachi.",
+    link: "https://open.spotify.com/artist/3mGW1eoqwNtCxd8R3hIOM5?autoplay=true",
+    imageUrl:
+      "https://i.scdn.co/image/ab6761610000e5eb12ee42a62a8a38517a81a691",
+  },
 {
     title: "Seedhe Maut",
     details:
-      "Seedhe Maut represent the next stage in the evolution of the capital’s hip-hop sound. Having mastered the art of delivering razor sharp, combative and witty rhymes, the duo are following in the trailblazing footsteps of international hip-hop collectives such as Run The Jewels, Clipse, Black Hippy, Mobb Deep, Blackstar and more.",
+      "Seedhe Maut represents the next stage in the evolution of the capital’s hip-hop sound. Having mastered the art of delivering razor sharp, combative and witty rhymes, the duo are following in the trailblazing footsteps of international hip-hop collectives such as Run The Jewels, Clipse, Black Hippy, Mobb Deep, Blackstar and more.",
     link: "https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo?si=c_bhyHUWRwuBa6dEzaymuQ&utm_source=copy-link",
     imageUrl:
       "https://pbs.twimg.com/media/F3PwN55aoAATOh2.jpg",
@@ -11,7 +19,7 @@ const data = [
   {
     title: "Talha Anjum",
     details:
-      "Talha Anjum Rasheed is a Pakistani rapper, songwriter and lyricist. He was born and raised in Karachi and is popularly known for being a member and co-founder of the Hip-hop band, Young Stunners along with Talhah Yunus, with Jokhay as music producer.",
+      "Talha Anjum Rasheed is a Pakistani rapper, songwriter, and lyricist. He was born and raised in Karachi and is popularly known for being a member and co-founder of the Hip-hop band, Young Stunners along with Talhah Yunus, with Jokhay as music producer.",
     link: "https://open.spotify.com/artist/69xcFpmqTOmFNOL08Bxyci",
     imageUrl:
       "https://images.genius.com/ff598810a64e130c7c4e9156477db663.485x485x1.jpg",
