@@ -1,6 +1,22 @@
 // data.js
 const data = [
     {
+    title: "Narci",
+    details:
+      "Narci is a rapper, lyricist, poet, and theater artist from Chandigarh. He has a master's degree in Journalism and Film Study. In 2010, he formed the rap duo 'United Cloudz'. The duo disbanded after a few years, and Narci continued as a solo artist.",
+    link: "https://open.spotify.com/artist/3b9iVRjKkiC4oIHXB7pbzJ?autoplay=true",
+    imageUrl:
+      "https://i.scdn.co/image/ab6761610000e5eb2af09135aad93328c57f497a",
+  },
+    {
+    title: "King",
+    details:
+      "Arpan, also known as King Rocco, was born in New Delhi, the nation's capital. He had dreams of becoming a successful rapper since he was 8 years old. He eventually achieved his dream and had great success with his YouTube channel.",
+    link: "https://open.spotify.com/artist/5NHm4TU5Twz7owibYxJfFU?autoplay=true",
+    imageUrl:
+      "https://ik.imagekit.io/j83rchiauw/A_List_Star/KingRapperBiography.jpg",
+  },
+    {
     title: "Talha Yunus",
     details:
       "Talhah Yunus is a Pakistani rapper, filmmaker and musician. He graduated from the National College of Arts in filmmaking. He is a part of the hip-hop duo Young Stunners along with Talha Anjum, having the music producer Jokhay. He was born and raised in Karachi.",
