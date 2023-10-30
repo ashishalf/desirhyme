@@ -1,5 +1,13 @@
 // data.js
 const data = [
+{
+    title: "Seedhe Maut",
+    details:
+      "Seedhe Maut represent the next stage in the evolution of the capital’s hip-hop sound. Having mastered the art of delivering razor sharp, combative and witty rhymes, the duo are following in the trailblazing footsteps of international hip-hop collectives such as Run The Jewels, Clipse, Black Hippy, Mobb Deep, Blackstar and more.",
+    link: "https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo?si=c_bhyHUWRwuBa6dEzaymuQ&utm_source=copy-link",
+    imageUrl:
+      "https://images.app.goo.gl/3zukUcTEaVJ3PbAH8",
+  },
   {
     title: "Talha Anjum",
     details:
