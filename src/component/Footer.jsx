@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
     <hr />
-    <p style={{textAlign: 'center', fontSize: isMobile ? '10px' : '15px'}}>© hiphop 2023 All Rights Reserved.</p>
+    <p style={{textAlign: 'center', fontSize: isMobile ? '10px' : '15px'}}>© desirhyme 2024 All Rights Reserved.</p>
     </>
   )
 }
