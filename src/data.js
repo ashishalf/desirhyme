@@ -1,5 +1,49 @@
 // data.js
 const data = [
+
+        {
+    title: "Hasan Raheem",
+    details:
+      "Hasan Raheem (born August 2, 1998) is a Pakistani singer, songwriter and rapper. He is known for his subtle, laid-back R&B, hip hop and indie pop styles of music.",
+    link: "https://open.spotify.com/artist/6gIqKYKRmltKfkTnxhMv8V",
+    imageUrl:
+      "https://pbs.twimg.com/profile_images/1697665120174825472/Pg-LIC_C_400x400.jpg",
+  },
+    
+    {
+    title: "Jani",
+    details:
+      "Karachi-based rising rapper and songwriter Jani, born Muhammad Ali Khan, has released his debut rap album 'Lostalgia'. ",
+    link: "https://open.spotify.com/artist/63L8XYlQRWRGlg1d4ujXDc",
+    imageUrl:
+      "https://yt3.googleusercontent.com/gWQy2CDF8dHNtd--N0hCPD1DhkyC99GRn7b1HSu-fv0u0GEcAtfv4Yhcz3izU-eFU8LDy-_3lvU=s900-c-k-c0x00ffffff-no-rj",
+  },
+    
+{
+    title: "Fotty Seven",
+    details:
+      "Fotty Seven Is A Hip-Hop Based Artist From Gurugram. He Was Born In 1991 And His Birthplace Is Gurugram, Haryana. Fotty Seven’s Real Name Is Ankit Gudwani And His Girlfriend’s Name Is Tenzin.",
+    link: "https://open.spotify.com/artist/7n5rLZ6NonT1BXW1fQmbuA",
+    imageUrl:
+      "https://i.scdn.co/image/ab6761610000e5ebbf027d388a40d87bc5a69ea7",
+  },
+    
+    {
+    title: "Panther",
+    details:
+      "Panther is an Indian Rapper, Lyricist, and Music Composer. He is well-known for his variety of music as well as the Indian hip-hop reality program, MTV Hustle 2.0. Panther’s real name is Anubhav Shukla.",
+    link: "https://open.spotify.com/artist/1HnV8VaGdip3y1SpJPgft0",
+    imageUrl:
+      "https://hire4event.com/apppanel/assets/artistimage/artistphoto/16822771025panther7.jpg",
+  },
+    {
+    title: "MC STAN",
+    details:
+      "MC Stan aka Altaf Tadavi is a pioneer as much as the product of Pune hip hop. He grew up around the neighbourhood of Tadiwala Road. Stan was introduced to hip hop when he was twelve years young by his elder brother.",
+    link: "https://open.spotify.com/artist/5uemEEtB1ZC3s1KM7gReeH",
+    imageUrl:
+      "https://img.indiaforums.com/article/900x900/19/0950-here-is-all-you-need-to-know-about-controversial-show-bigg-boss-16s-most-talked-about-contestant-mc-.jpg?c=0cN60D",
+  },
     {
     title: "Narci",
     details:
