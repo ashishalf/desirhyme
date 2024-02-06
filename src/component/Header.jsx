@@ -8,7 +8,7 @@ function Header() {
       <div style={{ display: 'flex', justifyContent: 'space-between', padding: isMobile ? '20px 20px' : '30px 60px' }}>
         <div>
           <h2 style={{ fontFamily: 'Montserrat Subrayada', fontSize: isMobile ? '15px' : 'inherit' }}>
-            HIPHOP <br /> <span style={{ fontSize: isMobile ? '10px' : '15px' }}>BY @ASHISHALF</span>
+            DesiRhyme <br /> <span style={{ fontSize: isMobile ? '10px' : '15px' }}>BY @ASHISHALF</span>
           </h2>
         </div>
         <a href="https://github.com/ashishalf/hiphop/blob/main/README.md">
@@ -33,7 +33,7 @@ function Header() {
           No Limits, Just Lyrics
         </h1>
         <p style={{ textAlign: 'center', fontSize: isMobile ? '15px' : '36px', fontFamily: 'Montserrat', marginBottom:'50px'}}>
-          Exploring the Dynamic World of Indian and Pakistani Rappers
+          Exploring the Dynamic World of Indian and Pakistani Rappers.
         </p>
       </div>
     </>
