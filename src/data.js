@@ -2,6 +2,51 @@
 const data = [
 
         {
+    title: "Badshah",
+    details:
+      "Aditya Prateek Singh Sisodia, professionally known as Badshah, is an Indian rapper, songwriter, singer, music producer, filmmaker, businessman, philanthropist and fashion designer. Badshah's musical style is diverse, encompassing Indian pop, hip-hop, rap, synthwave, underground rap, pop rap, hardcore rap, and freestyle.",
+    link: "https://open.spotify.com/artist/0y59o4v8uw5crbN9M3JiL1",
+    imageUrl:
+      "https://www.franchiseindia.com/expo/mumbai/assets/imgs/speakers/badshah.jpg",
+  },
+
+        {
+    title: "aleemrk",
+    details:
+      "aleemrk (real name Aleem Khan) is a 25 year old musician from the UK. His eclectic blend of hip-hop, pop, soul and R&B creates a unique soundscape that explores the depths of human emotion.",
+    link: "https://open.spotify.com/artist/384pA1WJO9B09gUcuIL2XP",
+    imageUrl:
+      "https://i.scdn.co/image/ab67706c0000da845bdc042238fb806e5f9452aa",
+  },
+
+        {
+    title: "Yo Yo Honey Singh",
+    details:
+      "Hirdesh Singh, known professionally as Yo Yo Honey Singh, or simply Honey Singh, is an Indian rapper, singer, music producer, and actor. He started in 2003 as a session and recording artist, and became a bhangra and hip hop, Punjabi music producer.",
+    link: "https://open.spotify.com/artist/7uIbLdzzSEqnX0Pkrb56cR",
+    imageUrl:
+      "https://englishtribuneimages.blob.core.windows.net/gallary-content/2023/3/2023_3$largeimg_1095291300.JPG",
+  },
+
+        {
+    title: "Raga",
+    details:
+      "Raga the Indian rapper, is a dynamic force in the music industry, known for his electrifying performances and thought-provoking lyrics. Hailing from Jamnapaar in New Delhi, India, Raga has captivated audiences with his unique blend of hip-hop, R&B, and traditional Indian music, creating a genre-defying sound that resonates with listeners worldwide.",
+    link: "https://open.spotify.com/artist/4MJZBb8KABfKw0gzfgacpO",
+    imageUrl:
+      "https://images.genius.com/690707636dbd8331d7cf47475b20d17e.1000x1000x1.png",
+  },
+
+        {
+    title: "DG Immortals",
+    details:
+      "DG Immortals, the Delhi-born rapper who's shaking up the Indian hip-hop scene with his raw, unapologetic & authentic style. With over a decade of experience and a super-hit discography, DG is a true rap veteran who's earned his stripes through tireless grind and dedication to his craft.",
+    link: "https://open.spotify.com/artist/7jbG8tDQ5FmqBbTCj5dJdy",
+    imageUrl:
+      "https://i.scdn.co/image/ab6761610000e5ebb80f2a8dfb7399006272493d",
+  },
+
+        {
     title: "Hasan Raheem",
     details:
       "Hasan Raheem (born August 2, 1998) is a Pakistani singer, songwriter and rapper. He is known for his subtle, laid-back R&B, hip hop and indie pop styles of music.",
