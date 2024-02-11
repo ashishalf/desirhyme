@@ -1,4 +1,4 @@
-# Hip-Hop
+# DesiRhyme
 
 Welcome to the HipHop website for Indian and Pakistani rappers! This static website is built using React, providing a platform to explore the vibrant Hip-hop culture of India and Pakistan. Whether you're a fan, artist, or just curious about the scene, this website is designed to keep you informed and entertained.
 
