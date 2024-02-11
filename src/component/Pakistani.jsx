@@ -3,11 +3,12 @@ import data from "../data";
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
 
-function ObjectRenderer() {
- 
+
+function Pakistani() {
+  const PakistaniArtists = data.filter(artist => artist.country === "pakistani")
   return (
     <>
-      {data.map((item, index) => (
+      {PakistaniArtists.map((item, index) => (
         <div
           key={index}
           style={{
@@ -73,9 +74,9 @@ function ObjectRenderer() {
             </button>
           </div>
         </div>
-      )).slice(5, 10)}
+      ))}
     </>
   );
 }
 
-export default ObjectRenderer;
+export default Pakistani;

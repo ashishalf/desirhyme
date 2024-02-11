@@ -3,19 +3,13 @@ import ObjectRendererMobile from "./component/ObjectRendererMobile";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 import "./App.css";
+import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Layout from './Layout.jsx';
+import Indian from "./component/Indian";
+import Pakistani from "./component/Pakistani";
 
 function App() {
-  const isMobile = window.innerWidth <= 768;
 
-  return (
-    <>
-      <Header />
-
-      {isMobile ? <ObjectRendererMobile /> : <ObjectRenderer />}
-
-      <Footer />
-    </>
-  );
 }
 
 export default App;

@@ -1,4 +1,6 @@
 import React from 'react';
+import  {Link} from "react-router-dom";
+
 
 function Header() {
   const isMobile = window.innerWidth <= 768; // Adjust the breakpoint as needed
@@ -11,14 +13,14 @@ function Header() {
             DesiRhyme <br /> <span style={{ fontSize: isMobile ? '10px' : '15px' }}>BY @ASHISHALF</span>
           </h2>
         </div>
-        <a href="https://github.com/ashishalf/hiphop/blob/main/README.md">
+        <Link to="https://github.com/ashishalf/hiphop/blob/main/README.md">
           <img
             width={isMobile ? 40 : 58}
             height={isMobile ? 40 : 58}
             src="https://img.icons8.com/3d-fluency/94/github.png"
             alt="github"
           />
-        </a>
+        </Link>
       </div>
       <div>
         <h1
@@ -36,6 +38,11 @@ function Header() {
           Exploring the Dynamic World of Indian and Pakistani Rappers.
         </p>
       </div>
+      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap:'20px', paddingBottom:isMobile ? '20px' : '20px'}}>
+  <Link to="/indian" style={{color:'white', textDecoration:"none"}}>Indian</Link>
+  <Link to="/pakistani" style={{color:'white', textDecoration:"none"}}>Pakistani</Link>
+</div>
+
     </>
   );
 }
