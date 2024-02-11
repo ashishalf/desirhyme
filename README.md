@@ -24,6 +24,7 @@ Here's how you can add more rappers to the website through the `data.js` file:
    ```javascript
    {
      title: "New Rapper",
+     country: "country name of rapper in lowercase",
      details: "A brief description of the new rapper.",
      link: "https://open.spotify.com/artist/your-artist-profile-link",
      imageUrl: "https://url-to-the-rapper's-image.jpg",
