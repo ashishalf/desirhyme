@@ -261,7 +261,7 @@ const data = [
        "Harjeet Singh 'Baba' Sehgal, is an Indian rapper. He is widely acclaimed to be the first Indian rapper. He is also involved in various other areas of the entertainment industry, and works in several different languages' media. He was a contestant in the reality show Bigg Boss in 2006",    
     link: "https://open.spotify.com/artist/7hYZXC29LqX4vWGloviTyG?si=V10HD9M6TFiIKFp80Mzvvw",
     imageUrl:
-       "https://media.ragalahari.com/profilephotos/baba-sehgal-poster.jpg",  
+       "https://pbs.twimg.com/profile_images/1703475604501250048/sqTME9CE_400x400.jpg",  
 },
     
 {
@@ -276,7 +276,7 @@ const data = [
     
 {
     title: "Imran Khan",
-    country:"dutch-pakistani",
+    country:"pakistani",
     details:
     	"Imran Khan is a Dutch-Pakistani singer, songwriter, and rapper. He performs sings in both English and Punjabi. He first became known in 2007 after the release of his first single 'Ni Nachleh', and was signed to Prestige Records later that year. His second single, 'Amplifier', was released in 2009.", 
     link: "https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js?si=VbneCE9NR1uuADUBjGUOmQ",
@@ -331,7 +331,7 @@ const data = [
 },
 {
     title: "Ali Gul Pir",
-    country: "Pakistani",
+    country: "pakistani",
     details: "Ali Gul Pir is a Pakistani rapper, comedian, and actor known for his satirical take on social issues and cultural commentary. Hailing from Karachi, Ali gained fame with his viral hit 'Waderai Ka Beta' and has since become a prominent voice in Pakistani entertainment. He uses his platform to address relevant issues in a humorous and engaging manner.",
     link: "https://open.spotify.com/artist/13eNbx72FERlGlrGGHIlF8?si=tikwHNL6TIOkxwxWw2fpnA",
     imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2mDCLd7iqRVVZ0rKA11dzSSPzfwoVOvkPzhM6JlxK9MIFbjT71Hl4HchBMFV_Ji1Tuk&usqp=CAU",
