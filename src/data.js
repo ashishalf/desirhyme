@@ -246,42 +246,95 @@ const data = [
         
   {
     title: "Dino James",
-    country:"Indian",
+    country:"indian",
     details:
-      "Dino James is a well-known YouTuber, writer, singer, and rapper from India. The music of Dino James has an effect on everyone who hears it. He became well-known for his polarising song 'Girlfriend.' Rapper Dino James relocated to Mumbai with the goal of becoming an actor, but instead found success as a singer, illustrating how unpredictable and unexpected life can be.",
+ 	 "Dino James is a well-known YouTuber, writer, singer, and rapper from India. The music of Dino James has an effect on everyone who hears it. He became well-known for his polarising song 'Girlfriend.' Rapper Dino James relocated to Mumbai with the goal of becoming an actor, but instead found success as a singer, illustrating how unpredictable and unexpected life can be.",
     link: "https://open.spotify.com/artist/45PG2L6Fh2XvYL4ONzpdoW?si=t6tQVz9wRRWxqNjWOVkMtw",
     imageUrl:
-            "https://wallpapercave.com/wp/wp4966850.jpg",
-  },
-        
-  {
+        "https://lastfm.freetls.fastly.net/i/u/770x0/8b12bbb162fd50512f08b9b1bc8b6f6d.jpg#8b12bbb162fd50512f08b9b1bc8b6f6d",
+},
+    
+{
     title: "Baba Sehgal",
-    country:"Indian",
+    country:"indian",
     details:
-        "Harjeet Singh 'Baba' Sehgal, is an Indian rapper. He is widely acclaimed to be the first Indian rapper. He is also involved in various other areas of the entertainment industry, and works in several different languages' media. He was a contestant in the reality show Bigg Boss in 2006",    
+       "Harjeet Singh 'Baba' Sehgal, is an Indian rapper. He is widely acclaimed to be the first Indian rapper. He is also involved in various other areas of the entertainment industry, and works in several different languages' media. He was a contestant in the reality show Bigg Boss in 2006",    
     link: "https://open.spotify.com/artist/7hYZXC29LqX4vWGloviTyG?si=V10HD9M6TFiIKFp80Mzvvw",
     imageUrl:
-        "https://img.indiaforums.com/media/720x0/40/1807-baba-sehgal-at-launch-of-viacom18s-voot.jpg",  
-  },
-        
-  {
-    title: "Seedhe Maut",
-    country:"Indian",
+       "https://media.ragalahari.com/profilephotos/baba-sehgal-poster.jpg",  
+},
+    
+{
+    title: "Karan Aujla",
+    country:"indian",
     details:
-        "Seedhe Maut is a hip-hop duo hailing from New Delhi, India. This dynamic duo comprises two talented individuals: Siddhant Sharma, who goes by the stage name Calm, and Abhijay Negi, known as Encore ABJ. In May 2017, Seedhe Maut made their mark by releasing their first track, 'Seedhe Maut Anthem.' As they continued to evolve, the duo released two studio albums – 'Bayaan' and 'Nayaab,' with a mixtape titled 'न' (pronounced as 'na') in between.",    
+   	 "Jaskaran Singh Aujla, known professionally as Karan Aujla, is an Indian singer, rapper and songwriter based in Canada who is primarily associated with Punjabi music, Aujla started his career along with Deep Jandu and Elly Mangat. He wrote lyrics for many artists including Gill, Mangat, Gagan Kokri, Jazzy B, Bohemia and Sukh-E.Aujla got his breakthrough with the song 'Don't Worry', featuring Gurlez Akhtar in it. The song's music video has been viewed over hundred million times on YouTube, and became Aujla's first song to enter UK Asian music chart.",    
     link: "https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo?si=PBsDReDnSVqrA13e-dWnkQ",
     imageUrl:
-        "https://wallpapercave.com/wp/wp9020731.jpg",
-  },
-        
-  {
+    	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7pdXdziVODfEiQtcnxTwdvx9ODdusTj672PcfEkGKBDNXnYQ",
+},
+    
+{
     title: "Imran Khan",
-    country:"Dutch-Pakistani",
+    country:"dutch-pakistani",
     details:
-        "Imran Khan is a Dutch-Pakistani singer, songwriter, and rapper. He performs sings in both English and Punjabi. He first became known in 2007 after the release of his first single 'Ni Nachleh', and was signed to Prestige Records later that year. His second single, 'Amplifier', was released in 2009.", 
+    	"Imran Khan is a Dutch-Pakistani singer, songwriter, and rapper. He performs sings in both English and Punjabi. He first became known in 2007 after the release of his first single 'Ni Nachleh', and was signed to Prestige Records later that year. His second single, 'Amplifier', was released in 2009.", 
     link: "https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js?si=VbneCE9NR1uuADUBjGUOmQ",
     imageUrl:
-        "https://wallpapercave.com/wp/wp7154713.jpg",
+    	"https://i.pinimg.com/originals/c3/96/19/c396199696e9b2aff0e1f49915a3ae7e.jpg",
+},
+{
+    title: "Prabh Deep",
+    country:"indian",
+    details:
+        "Prabhdeep Singh, better known by his stage name, Prabh Deep, is an Indian rapper, songwriter and music producer. He gained recognition in the Indian music industry after the release of his debut album Class-Sikh which debuted at number 2 on iTunes India albums chart and quickly ranked up to number 1 by the end of the year.", 
+    link: "https://open.spotify.com/artist/7suHsCqUEifucqVyWaljgC?si=8vhglcy0QC-hfugofKrM6w",
+    imageUrl:
+         "http://t1.gstatic.com/images?q=tbn:ANd9GcTI0MicLYqDO_0AnOClDccMmwSebKbUSL8bWMnmUbUNa7YqkIUDsB6dokb7ZwrrowvMT9xivw",
+},
+{
+     title: "Raftaar",
+     country:"indian",
+     details:
+            "Kalathil Kuzhiyil Devadasan Dilin Nair, better known by his stage name Raftaar, is an Indian rapper, lyricist, dancer, actor, TV personality and music composer. He started his career as a dancer, Raftaar became known after releasing his song 'Swag Mera Desi' in 2013 with Manj Musik. The line 'Ab yeh karke dikhao' (transl. Now try to do this) from the song was a diss to Yo Yo Honey Singh.'Ab yeh karke dikhao' had already been used in Yo Yo Honey Singh's song 'Party With The Bhoothnath' which led to a dispute between the two rappers in media. 'Swag Mera Desi' won Best Urban Song at the Brit Asia TV Music Awards in 2014.", 
+     link: "https://open.spotify.com/artist/5UdFr0GeO7jKIaNIJgwB36?si=4aCh8IhqSH-CoygXaaFxgw",
+     imageUrl:
+            "https://www.bollywoodhungama.com/wp-content/uploads/2020/12/Sony-Music-India-partners-with-Epic-Games-to-feature-rapper-Raftaar-in-new-%E2%80%98Bhangra-Boogie-Cup%E2%80%99-Fortnite-campaign-.jpg",
+},
+{
+    title: "Naezy",
+    country: "indian",
+    details: "Naved Shaikh, known by his stage name Naezy, is an Indian rapper and songwriter. He gained prominence with his breakout song 'Aafat,' which showcased his unique style and storytelling abilities. Naezy is considered one of the pioneers of the underground hip-hop movement in India and continues to inspire aspiring rappers with his authentic voice and socially relevant lyrics.",
+    link: "https://open.spotify.com/artist/2oeTqp8DgAmtnP2WGc1OS2?si=chmw0TXCQHWFExzMmAoRPw",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2yVesxGS30FvSju2zqGQdM5I4GdKcorCHhw&usqp=CAU"
+},
+{
+    title: "MC Kode",
+    country: "indian",
+    details: "Aditya Tiwari, known by his stage name MC Kode, was an Indian rapper known for his powerful and thought-provoking lyrics. He gained recognition for his performances in rap battles and his tracks addressing social and political issues. MC Kode's untimely demise in 2021 left a void in the Indian rap community.",
+    link: "https://open.spotify.com/artist/1F0MxWTo0mMWfaCvXWTHh8?si=fuXJSqn6QsCkxwckoCOBjA",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHb43mLUjSL8VHeaSMKMRrx8OkE76wLfj5bA&usqp=CAU"
+},
+{
+    title: "Muhfaad",
+    country: "indian",
+    details: "Gaurav Rawat, known by his stage name Muhfaad, is an Indian rapper and songwriter known for his raw and unfiltered lyrics. Hailing from Delhi, Muhfaad gained prominence in the Indian rap scene with his distinctive style and impactful storytelling. He has collaborated with various artists and continues to push the boundaries of Hindi rap.",
+    link: "https://open.spotify.com/artist/5pqZ05b1zkz3er6iz4d4qr?si=6qqtPEH7RnuJ1rW8Oi95YA",
+    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELQ425rgU0BgU32c-b6teQYgdm2rLjnTT-OP8dCjwLL-G2ChFCUUoBZfOeKZelFUGifY&usqp=CAU",
+},
+{
+    title: "Adil Omar",
+    country: "pakistani",
+    details: "Adil Omar is a Pakistani rapper, songwriter, and record producer known for his eclectic style and bold lyrics. Hailing from Islamabad, Adil gained recognition with his debut album 'The Mushroom Cloud Effect' and has since released several acclaimed singles and collaborations. He is known for pushing the boundaries of Pakistani hip-hop and experimenting with various musical genres.",
+    link: "https://open.spotify.com/artist/0ifxsBUXLEpdg0DJq5F14E?si=K7t8E6mgSZ6F9fEAWCBU4g",
+    imageUrl:"https://i.tribune.com.pk/media/images/1752694-adil_cover-1531040602/1752694-adil_cover-1531040602.jpg",
+},
+{
+    title: "Ali Gul Pir",
+    country: "Pakistani",
+    details: "Ali Gul Pir is a Pakistani rapper, comedian, and actor known for his satirical take on social issues and cultural commentary. Hailing from Karachi, Ali gained fame with his viral hit 'Waderai Ka Beta' and has since become a prominent voice in Pakistani entertainment. He uses his platform to address relevant issues in a humorous and engaging manner.",
+    link: "https://open.spotify.com/artist/13eNbx72FERlGlrGGHIlF8?si=tikwHNL6TIOkxwxWw2fpnA",
+    imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2mDCLd7iqRVVZ0rKA11dzSSPzfwoVOvkPzhM6JlxK9MIFbjT71Hl4HchBMFV_Ji1Tuk&usqp=CAU",
 }
 
 ];
