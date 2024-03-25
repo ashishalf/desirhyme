@@ -1,6 +1,32 @@
 // data.js
 const data = [
-
+        {
+    title: "Abdullah Malik",
+    country:"pakistani",
+    details:
+      "Abdullah Malik, also known as Rap Demon, is a Pakistani rapper, singer, producer, and lyricist from Islamabad. He was born on March 20, 1996 and started writing rhymes and producing at age 11.",
+    link: "https://open.spotify.com/artist/5Op1QmEE3Eye8gdNrla3ok",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b2733666df93b6b8fe1b38a75540",
+  },
+ {
+    title: "Nazz",
+    country:"indian",
+    details:
+      "Nazz is an Indian rapper and music composer in India. Nazz’s real name is Nihar. Nazz’s birthplace is Mumbai. Nazz's height is 5 feet 8 inches. Nazz’s weight is 68kg. Nihar a well-known rapper and composer of music goes by the stage name Nazz.",
+    link: "https://open.spotify.com/artist/7iEUKVcv42PUcIS696yadB",
+    imageUrl:
+      "https://ik.imagekit.io/j83rchiauw/A_List_Star/nazz-biography.jpg",
+  },
+        {
+    title: "Jokhay",
+    country:"pakistani",
+    details:
+      "Jokhay, whose real name is Umair Khan, is a music producer, songwriter, and guitarist from Karachi, Pakistan. He was born on September 7, 1991. He is known for his work on the album Khana Badosh and for producing songs such as Quarantine, Guman, Afsanay, Aazma Le, and Benz.",
+    link: "https://open.spotify.com/artist/0Nl4kTPLk2ucrARvaf55zQ",
+    imageUrl:
+      "https://i.scdn.co/image/ab6761610000e5ebefd8edc35ed9ae05b22fa625",
+  },
         {
     title: "Badshah",
     country:"indian",
@@ -39,6 +65,15 @@ const data = [
     link: "https://open.spotify.com/artist/4MJZBb8KABfKw0gzfgacpO",
     imageUrl:
       "https://images.genius.com/690707636dbd8331d7cf47475b20d17e.1000x1000x1.png",
+  },
+        {
+    title: "Umer Anjum",
+    country:"pakistani",
+    details:
+      "Umer anjum is a 23/yo Rapper from Karachi, Pakistan. Known for penning down his raw emotions,personal feelings with transparency towards his audience, Umer anjum made his debut In 2020 and re-ignited the “Drill” sound for the Pakistani rap community inspiring countless rappers to explore the new sound in their own way.",
+    link: "https://open.spotify.com/artist/1mpkZnWbtXXPB5QitvCnMV",
+    imageUrl:
+      "https://i.scdn.co/image/ab67616d0000b273a8756b9891c86c60fcca0ea7",
   },
 
         {
