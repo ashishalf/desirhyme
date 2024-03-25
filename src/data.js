@@ -161,7 +161,7 @@ const data = [
       "An Indian rapper and music producer from Dehradun. Arora chose the name Karma because he believes everything in life is about karma. He also wanted a name that would stand out from the crowd.",
     link: "https://open.spotify.com/artist/2RS1R0tueoL8EJXTSBAt2F",
     imageUrl:
-      "https://yt3.googleusercontent.com/ZsJ4ck3oJde6LUEvZXs_9ZQr518kO-pDoRd4E5Ib59Vfm4F2VbWFw8jDKQXA8UzwVXHD7GDBAg=s900-c-k-c0x00ffffff-no-rj",
+      "https://yt3.googleusercontent.com/6UrfpWQRsD1o3Kqwxp3Xn3mbTqQF667yJyRBrZL9S_GJOXfexJNej28X1I1RDKANZo7IleYWeA=s900-c-k-c0x00ffffff-no-rj",
   },
 
   {
