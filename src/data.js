@@ -337,38 +337,6 @@ const data = [
     imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2mDCLd7iqRVVZ0rKA11dzSSPzfwoVOvkPzhM6JlxK9MIFbjT71Hl4HchBMFV_Ji1Tuk&usqp=CAU",
 },
 
-{
-  title: "Prabh Deep",
-  country: "indian",
-  details: "Prabhdeep Singh, better known by his stage name, Prabh Deep, is an Indian rapper, songwriter and music producer. He gained recognition in the Indian music industry after the release of his debut album Class-Sikh which debuted at number 2 on iTunes India albums chart and quickly ranked up to number 1 by the end of the year.",
-  link: "https://open.spotify.com/artist/7suHsCqUEifucqVyWaljgC?si=8vhglcy0QC-hfugofKrM6w",
-  imageUrl: "http://t1.gstatic.com/images?q=tbn:ANd9GcTI0MicLYqDO_0AnOClDccMmwSebKbUSL8bWMnmUbUNa7YqkIUDsB6dokb7ZwrrowvMT9xivw"
-},
-
-{
-  title: "Raftaar",
-  country: "indian",
-  details: "Kalathil Kuzhiyil Devadasan Dilin Nair, better known by his stage name Raftaar, is an Indian rapper, lyricist, dancer, actor, TV personality and music composer. He started his career as a dancer, Raftaar became known after releasing his song 'Swag Mera Desi' in 2013 with Manj Musik. The line 'Ab yeh karke dikhao' (transl. Now try to do this) from the song was a diss to Yo Yo Honey Singh.'Ab yeh karke dikhao' had already been used in Yo Yo Honey Singh's song 'Party With The Bhoothnath' which led to a dispute between the two rappers in media. 'Swag Mera Desi' won Best Urban Song at the Brit Asia TV Music Awards in 2014.",
-  link: "https://open.spotify.com/artist/5UdFr0GeO7jKIaNIJgwB36?si=4aCh8IhqSH-CoygXaaFxgw",
-  imageUrl: "https://www.bollywoodhungama.com/wp-content/uploads/2020/12/Sony-Music-India-partners-with-Epic-Games-to-feature-rapper-Raftaar-in-new-%E2%80%98Bhangra-Boogie-Cup%E2%80%99-Fortnite-campaign-.jpg"
-},
-
-{
-  title: "Naezy",
-  country: "indian",
-  details: "Naved Shaikh, known by his stage name Naezy, is an Indian rapper and songwriter. He gained prominence with his breakout song 'Aafat,' which showcased his unique style and storytelling abilities. Naezy is considered one of the pioneers of the underground hip-hop movement in India and continues to inspire aspiring rappers with his authentic voice and socially relevant lyrics.",
-  link: "https://open.spotify.com/artist/2oeTqp8DgAmtnP2WGc1OS2?si=chmw0TXCQHWFExzMmAoRPw",
-  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2yVesxGS30FvSju2zqGQdM5I4GdKcorCHhw&usqp=CAU"
-},
-
-{
-  title: "MC Kode",
-  country: "indian",
-  details: "Aditya Tiwari, known by his stage name MC Kode, was an Indian rapper known for his powerful and thought-provoking lyrics. He gained recognition for his performances in rap battles and his tracks addressing social and political issues. MC Kode's untimely demise in 2021 left a void in the Indian rap community.",
-  link: "https://open.spotify.com/artist/1F0MxWTo0mMWfaCvXWTHh8?si=fuXJSqn6QsCkxwckoCOBjA",
-  imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHb43mLUjSL8VHeaSMKMRrx8OkE76wLfj5bA&usqp=CAU"
-},
-
 ];
 
 export default data;
