@@ -56,7 +56,7 @@ function ObjectRenderer() {
             </button>
           </div>
         </div>
-      )).slice(0, 10).sort(() => Math.random() - 0.5)}
+      )).sort(() => Math.random() - 0.5).slice(0, 10)}
     </>
   );
 }
