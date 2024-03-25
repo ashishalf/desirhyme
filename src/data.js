@@ -68,7 +68,7 @@ const data = [
       "Karachi-based rising rapper and songwriter Jani, born Muhammad Ali Khan, has released his debut rap album 'Lostalgia'. ",
     link: "https://open.spotify.com/artist/63L8XYlQRWRGlg1d4ujXDc",
     imageUrl:
-      "https://yt3.googleusercontent.com/gWQy2CDF8dHNtd--N0hCPD1DhkyC99GRn7b1HSu-fv0u0GEcAtfv4Yhcz3izU-eFU8LDy-_3lvU=s900-c-k-c0x00ffffff-no-rj",
+      "https://external-preview.redd.it/jani-lostalgia-v0-EtgaGVy9JfUbynWqYNV9pwBYelVQuUIWJjIfRbGmS2I.jpg?auto=webp&s=1cdb9a66702ed1847ed3d405ca8ad6f3e7dd581a",
   },
     
 {
