@@ -264,7 +264,7 @@ const data = [
     title: "Seedhe Maut",
     country:"indian",
     details:
-      "Seedhe Maut represents the next stage in the evolution of the capital’s hip-hop sound. Having mastered the art of delivering razor sharp, combative and witty rhymes, the duo are following in the trailblazing footsteps of international hip-hop collectives such as Run The Jewels, Clipse, Black Hippy, Mobb Deep, Blackstar and more.",
+      "Seedhe Maut represents the next stage in the evolution of the capital’s hip-hop sound. Having mastered the art of delivering razor sharp, combative and witty rhymes, the duo are following in the trailblazing footsteps of international hip-hop collectives.",
     link: "https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo?si=c_bhyHUWRwuBa6dEzaymuQ&utm_source=copy-link",
     imageUrl:
       "https://pbs.twimg.com/media/F3PwN55aoAATOh2.jpg",
@@ -342,7 +342,7 @@ const data = [
     title: "divine",
     country:"indian",
     details:
-      "Divine, (stylized as DIVINE), is an Indian rapper of Goan descent. Born and raised in Andheri, Mumbai, Divine started gaining popularity after the release of his single 'Yeh Mera Bombay' in 2013. He broke through with the release of 'Mere Gully Mein' in 2019, which featured fellow Mumbai-based rapper Naezy.",
+      "Divine, (stylized as DIVINE), is an Indian rapper of Goan descent. Born and raised in Andheri, Mumbai, Divine started gaining popularity after the release of his single 'Yeh Mera Bombay' in 2013.",
     link: "https://open.spotify.com/artist/4Ai0pGz6GhQavjzaRhPTvz",
     imageUrl: 
       "https://allaboutmusic.in/wp-content/uploads/2019/08/DIVINE-30364-ConvertImage-ConvertImage-2048x2048.jpg",
@@ -352,7 +352,7 @@ const data = [
     title: "emiway bantai",
     country:"indian",
     details:
-      "Emiway Bantai is an Indian singer, songwriter, rapper and live performer. His most well-known work is the song Asli Hip Hop from the 2019 movie Gully Boy. He also made an appearance on the well-known reality series India’s Got Talent before becoming famous. Emiway originally from Bengaluru, Karnataka.",
+      "Emiway Bantai is an Indian singer, songwriter, rapper and live performer. His most well-known work is the song Asli Hip Hop from the 2019 movie Gully Boy. He also made an appearance on the well-known reality series India’s Got Talent before becoming famous.",
     link: "https://open.spotify.com/artist/008PpLcKUtVXle6JSwkq3I",
     imageUrl: 
       "https://media.insider.in/image/upload/c_crop,g_custom/v1692772698/a9pulg5c16x5kjwpfbt8.png",
@@ -362,7 +362,7 @@ const data = [
     title: "Mr. Dawar",
     country:"pakistani",
     details:
-      "Mr Dawar is an independent Pakistani rapper from Lahore, Pakistan. His most lyrics are society-based and on social issues which he uses in his music to wake up the public from dream neglect. He is one of a notable icon from the underground hip-hop scene of Pakistan, his maximum songs are in pure Urdu language. He uses daily routine words/slang which connects the local listeners.",
+      "Mr Dawar is an independent Pakistani rapper from Lahore, Pakistan. His most lyrics are society-based and on social issues which he uses in his music to wake up the public from dream neglect. ",
     link: "https://open.spotify.com/artist/3ZH9QiZICwDSDt57FTduC9",
     imageUrl:
       "https://yt3.googleusercontent.com/yxsHEYx92_ck66yY8aiOJhaXhRhxTLgMYCojE57KQ7ULtVKT2zeYZ6ACadjlnmA7trqCuaEw=s900-c-k-c0x00ffffff-no-rj"
@@ -382,7 +382,7 @@ const data = [
     title: "Dino James",
     country:"indian",
     details:
- 	 "Dino James is a well-known YouTuber, writer, singer, and rapper from India. The music of Dino James has an effect on everyone who hears it. He became well-known for his polarising song 'Girlfriend.' Rapper Dino James relocated to Mumbai with the goal of becoming an actor, but instead found success as a singer, illustrating how unpredictable and unexpected life can be.",
+ 	 "Dino James is a well-known YouTuber, writer, singer, and rapper from India. The music of Dino James has an effect on everyone who hears it. He became well-known for his polarising song 'Girlfriend.'.",
     link: "https://open.spotify.com/artist/45PG2L6Fh2XvYL4ONzpdoW?si=t6tQVz9wRRWxqNjWOVkMtw",
     imageUrl:
         "https://lastfm.freetls.fastly.net/i/u/770x0/8b12bbb162fd50512f08b9b1bc8b6f6d.jpg#8b12bbb162fd50512f08b9b1bc8b6f6d",
@@ -392,7 +392,7 @@ const data = [
     title: "Baba Sehgal",
     country:"indian",
     details:
-       "Harjeet Singh 'Baba' Sehgal, is an Indian rapper. He is widely acclaimed to be the first Indian rapper. He is also involved in various other areas of the entertainment industry, and works in several different languages' media. He was a contestant in the reality show Bigg Boss in 2006",    
+       "Harjeet Singh 'Baba' Sehgal, is an Indian rapper. He is widely acclaimed to be the first Indian rapper. He is also involved in various other areas of the entertainment industry, and works in several different languages' media.",    
     link: "https://open.spotify.com/artist/7hYZXC29LqX4vWGloviTyG?si=V10HD9M6TFiIKFp80Mzvvw",
     imageUrl:
        "https://pbs.twimg.com/profile_images/1703475604501250048/sqTME9CE_400x400.jpg",  
@@ -402,7 +402,7 @@ const data = [
     title: "Karan Aujla",
     country:"indian",
     details:
-   	 "Jaskaran Singh Aujla, known professionally as Karan Aujla, is an Indian singer, rapper and songwriter based in Canada who is primarily associated with Punjabi music, Aujla started his career along with Deep Jandu and Elly Mangat. He wrote lyrics for many artists including Gill, Mangat, Gagan Kokri, Jazzy B, Bohemia and Sukh-E.Aujla got his breakthrough with the song 'Don't Worry', featuring Gurlez Akhtar in it. The song's music video has been viewed over hundred million times on YouTube, and became Aujla's first song to enter UK Asian music chart.",    
+   	 "Jaskaran Singh Aujla, known professionally as Karan Aujla, is an Indian singer, rapper and songwriter based in Canada who is primarily associated with Punjabi music, Aujla started his career along with Deep Jandu and Elly Mangat. ",    
     link: "https://open.spotify.com/artist/2oBG74gAocPMFv6Ij9ykdo?si=PBsDReDnSVqrA13e-dWnkQ",
     imageUrl:
     	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7pdXdziVODfEiQtcnxTwdvx9ODdusTj672PcfEkGKBDNXnYQ",
@@ -412,7 +412,7 @@ const data = [
     title: "Imran Khan",
     country:"pakistani",
     details:
-    	"Imran Khan is a Dutch-Pakistani singer, songwriter, and rapper. He performs sings in both English and Punjabi. He first became known in 2007 after the release of his first single 'Ni Nachleh', and was signed to Prestige Records later that year. His second single, 'Amplifier', was released in 2009.", 
+    	"Imran Khan is a Dutch-Pakistani singer, songwriter, and rapper. He performs sings in both English and Punjabi. He first became known in 2007 after the release of his first single 'Ni Nachleh'.", 
     link: "https://open.spotify.com/artist/24BYRlsS8uIO4jA71mJ4Js?si=VbneCE9NR1uuADUBjGUOmQ",
     imageUrl:
     	"https://i.pinimg.com/originals/c3/96/19/c396199696e9b2aff0e1f49915a3ae7e.jpg",
@@ -421,7 +421,7 @@ const data = [
     title: "Prabh Deep",
     country:"indian",
     details:
-        "Prabhdeep Singh, better known by his stage name, Prabh Deep, is an Indian rapper, songwriter and music producer. He gained recognition in the Indian music industry after the release of his debut album Class-Sikh which debuted at number 2 on iTunes India albums chart and quickly ranked up to number 1 by the end of the year.", 
+        "Prabhdeep Singh, better known by his stage name, Prabh Deep, is an Indian rapper, songwriter and music producer. He gained recognition in the Indian music industry after the release of his debut album Class-Sikh.", 
     link: "https://open.spotify.com/artist/7suHsCqUEifucqVyWaljgC?si=8vhglcy0QC-hfugofKrM6w",
     imageUrl:
          "http://t1.gstatic.com/images?q=tbn:ANd9GcTI0MicLYqDO_0AnOClDccMmwSebKbUSL8bWMnmUbUNa7YqkIUDsB6dokb7ZwrrowvMT9xivw",
@@ -430,7 +430,7 @@ const data = [
      title: "Raftaar",
      country:"indian",
      details:
-            "Kalathil Kuzhiyil Devadasan Dilin Nair, better known by his stage name Raftaar, is an Indian rapper, lyricist, dancer, actor, TV personality and music composer. He started his career as a dancer, Raftaar became known after releasing his song 'Swag Mera Desi' in 2013 with Manj Musik. The line 'Ab yeh karke dikhao' (transl. Now try to do this) from the song was a diss to Yo Yo Honey Singh.'Ab yeh karke dikhao' had already been used in Yo Yo Honey Singh's song 'Party With The Bhoothnath' which led to a dispute between the two rappers in media. 'Swag Mera Desi' won Best Urban Song at the Brit Asia TV Music Awards in 2014.", 
+            "Kalathil Kuzhiyil Devadasan Dilin Nair, better known by his stage name Raftaar, is an Indian rapper, lyricist, dancer, actor, TV personality and music composer. He started his career as a dancer.", 
      link: "https://open.spotify.com/artist/5UdFr0GeO7jKIaNIJgwB36?si=4aCh8IhqSH-CoygXaaFxgw",
      imageUrl:
             "https://www.bollywoodhungama.com/wp-content/uploads/2020/12/Sony-Music-India-partners-with-Epic-Games-to-feature-rapper-Raftaar-in-new-%E2%80%98Bhangra-Boogie-Cup%E2%80%99-Fortnite-campaign-.jpg",
@@ -438,35 +438,35 @@ const data = [
 {
     title: "Naezy",
     country: "indian",
-    details: "Naved Shaikh, known by his stage name Naezy, is an Indian rapper and songwriter. He gained prominence with his breakout song 'Aafat,' which showcased his unique style and storytelling abilities. Naezy is considered one of the pioneers of the underground hip-hop movement in India and continues to inspire aspiring rappers with his authentic voice and socially relevant lyrics.",
+    details: "Naved Shaikh, known by his stage name Naezy, is an Indian rapper and songwriter. He gained prominence with his breakout song 'Aafat,' which showcased his unique style and storytelling abilities. ",
     link: "https://open.spotify.com/artist/2oeTqp8DgAmtnP2WGc1OS2?si=chmw0TXCQHWFExzMmAoRPw",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2yVesxGS30FvSju2zqGQdM5I4GdKcorCHhw&usqp=CAU"
 },
 {
     title: "MC Kode",
     country: "indian",
-    details: "Aditya Tiwari, known by his stage name MC Kode, was an Indian rapper known for his powerful and thought-provoking lyrics. He gained recognition for his performances in rap battles and his tracks addressing social and political issues. MC Kode's untimely demise in 2021 left a void in the Indian rap community.",
+    details: "Aditya Tiwari, known by his stage name MC Kode, was an Indian rapper known for his powerful and thought-provoking lyrics. He gained recognition for his performances in rap battles and his tracks addressing social and political issues.",
     link: "https://open.spotify.com/artist/1F0MxWTo0mMWfaCvXWTHh8?si=fuXJSqn6QsCkxwckoCOBjA",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHb43mLUjSL8VHeaSMKMRrx8OkE76wLfj5bA&usqp=CAU"
 },
 {
     title: "Muhfaad",
     country: "indian",
-    details: "Gaurav Rawat, known by his stage name Muhfaad, is an Indian rapper and songwriter known for his raw and unfiltered lyrics. Hailing from Delhi, Muhfaad gained prominence in the Indian rap scene with his distinctive style and impactful storytelling. He has collaborated with various artists and continues to push the boundaries of Hindi rap.",
+    details: "Gaurav Rawat, known by his stage name Muhfaad, is an Indian rapper and songwriter known for his raw and unfiltered lyrics. Hailing from Delhi, Muhfaad gained prominence in the Indian rap scene with his distinctive style and impactful storytelling.",
     link: "https://open.spotify.com/artist/5pqZ05b1zkz3er6iz4d4qr?si=6qqtPEH7RnuJ1rW8Oi95YA",
     imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRELQ425rgU0BgU32c-b6teQYgdm2rLjnTT-OP8dCjwLL-G2ChFCUUoBZfOeKZelFUGifY&usqp=CAU",
 },
 {
     title: "Adil Omar",
     country: "pakistani",
-    details: "Adil Omar is a Pakistani rapper, songwriter, and record producer known for his eclectic style and bold lyrics. Hailing from Islamabad, Adil gained recognition with his debut album 'The Mushroom Cloud Effect' and has since released several acclaimed singles and collaborations. He is known for pushing the boundaries of Pakistani hip-hop and experimenting with various musical genres.",
+    details: "Adil Omar is a Pakistani rapper, songwriter, and record producer known for his eclectic style and bold lyrics. Hailing from Islamabad, Adil gained recognition with his debut album 'The Mushroom Cloud Effect'.",
     link: "https://open.spotify.com/artist/0ifxsBUXLEpdg0DJq5F14E?si=K7t8E6mgSZ6F9fEAWCBU4g",
     imageUrl:"https://i.tribune.com.pk/media/images/1752694-adil_cover-1531040602/1752694-adil_cover-1531040602.jpg",
 },
 {
     title: "Ali Gul Pir",
     country: "pakistani",
-    details: "Ali Gul Pir is a Pakistani rapper, comedian, and actor known for his satirical take on social issues and cultural commentary. Hailing from Karachi, Ali gained fame with his viral hit 'Waderai Ka Beta' and has since become a prominent voice in Pakistani entertainment. He uses his platform to address relevant issues in a humorous and engaging manner.",
+    details: "Ali Gul Pir is a Pakistani rapper, comedian, and actor known for his satirical take on social issues and cultural commentary. Hailing from Karachi, Ali gained fame with his viral hit 'Waderai Ka Beta'.",
     link: "https://open.spotify.com/artist/13eNbx72FERlGlrGGHIlF8?si=tikwHNL6TIOkxwxWw2fpnA",
     imageUrl:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs2mDCLd7iqRVVZ0rKA11dzSSPzfwoVOvkPzhM6JlxK9MIFbjT71Hl4HchBMFV_Ji1Tuk&usqp=CAU",
 },
