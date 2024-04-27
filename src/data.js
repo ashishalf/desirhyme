@@ -1,6 +1,105 @@
 // data.js
 const data = [
         {
+    title: "MC Insane",
+    country:"indian",
+    details:
+      "MC Insane, whose real name is Prakash Sharma, is an Indian rapper known for his unique style of emo rap. Born and raised in Naharlagun, he has been making waves in the Indian hip-hop scene since 2016. ",
+    link: "https://open.spotify.com/artist/7vlghc3VSBc7oPg2a2FRSq",
+    imageUrl:
+      "https://yt3.googleusercontent.com/d8t7Ab899upirLF7riIFWoVUH8EKLZUWUYWihK_4RLFZTYLP109tofJdMCUeHq_f2vzTaVnMFKs=s900-c-k-c0x00ffffff-no-rj",
+  },
+        {
+    title: "Paradox",
+    country:"indian",
+    details:
+      "Paradox is the stage name of Tanishq Singh, an Indian rapper, lyricist, and composer who became famous after appearing as a runner-up on the 2023 MTV Hustle 2.0 reality show. ",
+    link: "https://open.spotify.com/artist/3fWcIRZlzhMl2YNACMvHui",
+    imageUrl:
+      "https://www.musiculture.in/wp-content/uploads/2023/03/Paradox-1-812x800.jpeg",
+  },
+           {
+    title: "GRAVITY",
+    country:"indian",
+    details:
+      "Akshay Poojary, better known as GRAVITY represents the evolution of the Indian Hip-Hop sound. Having mastered the art of delivering the best acts including 'Jalaluddin', 'Pop Smoke' etc. ",
+    link: "https://open.spotify.com/artist/7ti25GJHIRWZ5f1WN0T2zO",
+    imageUrl:
+      "https://yt3.googleusercontent.com/Kc_mrACr9XCA6_IPVzxIbtNpJrCNWVqJ4dcsRW9FX3DjPHDFWGLwEwh_qnY-kytaao1W46K2EA=s900-c-k-c0x00ffffff-no-rj",
+  },
+            {
+    title: "Spectra",
+    country:"indian",
+    details:
+      "Shubham Pal commonly known as Spectra is an upcoming rapper hip-hop musician and stage performer from India. Since his college years he had an interest in rapping. He began his YouTube channel and used to post videos of his rap songs there. ",
+    link: "https://open.spotify.com/artist/6kQXMHA8JGJQsRsMBqqe7l",
+    imageUrl:
+      "https://yt3.googleusercontent.com/qdRZTJtrVvxcnx9uLfEmZPlZ2mxKOR6qnud4zQodiec_-121YMEuxcUw-dYBc1w6aRoblB6i=s900-c-k-c0x00ffffff-no-rj",
+  },
+        {
+    title: "MC SQUARE",
+    country:"indian",
+    details:
+      "MC Square's real name is Abhishek Bensla. Abhishek Bensla is an Indian rapper and composer better known by his stage name MC Square. He received praise for his performance in season two of MTV Hustle. ",
+    link: "https://open.spotify.com/artist/5WZViOJ21095FUcGPMpKFF",
+    imageUrl:
+      "https://viberatecdn.blob.core.windows.net/entity/artist/mc-square-wLsts",
+  },
+             {
+    title: "MC Altaf",
+    country:"indian",
+    details:
+      "A popular hip-hop artist hailing from Asia's largest slum, Dharavi, 20 year old, Altaf Shaikh who goes by the moniker MC Altaf is popular for his Bronx's inspired guileless approach to his music.",
+    link: "https://open.spotify.com/artist/1oMKeiHXRkg7tNqwhaS3fu",
+    imageUrl:
+      "https://yt3.googleusercontent.com/psoZ3gIECDoCx9dE6lGyCcFZa7DuspoSSpe-LGJfwcHfIokUNU21Awzq-igYNvhmONvs8fwcXQ=s900-c-k-c0x00ffffff-no-rj",
+  },
+         {
+    title: "Mickey Singh",
+    country:"indian",
+    details:
+      "Harmanjit 'Mickey' Singh is an Indian-American singer, songwriter, producer, dancer, model and actor. He gained widespread popularity through his first mixtape of Punjabi and English music, Mick's Tape.",
+    link: "https://open.spotify.com/artist/3KDhyMTFZlrfAO0zK18z4t",
+    imageUrl:
+      "https://i.scdn.co/image/ab6761610000e5eb1f80c765181a75ebee67b55f",
+  },
+        {
+    title: "Abdul Hannan",
+    country:"pakistani",
+    details:
+      "Abdul Hannan is a singer-songwriter from Pakistan. Since 2010, he has been captivating audiences with his unique style of music. Drawing on influences from various genres, including Rock, Pop, and Country.",
+    link: "https://open.spotify.com/artist/5mWQT8CLTa4mAQAJdFjHb1",
+    imageUrl:
+      "https://yt3.googleusercontent.com/CnqkVsSVpL7WL14iq9lYqOljT8_pYkp8QemyLj0UYHqZ41lUNIGIy3Rr57SQp8p4kERYH_bLkA=s900-c-k-c0x00ffffff-no-rj",
+  },
+        {
+    title: "JJ47",
+    country:"pakistani",
+    details:
+      "JJ47 is a rapper / hip hop artist hailing from Karachi, Pakistan. JJ47 has been honing his skills in the underground and considered one of the finest.",
+    link: "https://open.spotify.com/artist/1SlrUQlFRfExXSCkHsQgBc",
+    imageUrl:
+      "https://yt3.googleusercontent.com/QopiR5GlYyh542MA1LyF4hD_Z5eTkCxTxWF4eI8klsOmKtnLpz14XGQEwgIPbSSsSqIeRvk2=s900-c-k-c0x00ffffff-no-rj",
+  },
+        {
+    title: "Shamoon Ismail",
+    country:"pakistani",
+    details:
+      "Shamoon Ismail was born and raised in Islamabad, to a Punjabi Muslim family. He has spent most of his life in Pakistan learning musical instruments, having a keen interest in playing guitars since childhood.",
+    link: "https://open.spotify.com/artist/5bxVbtf4t5k1QPmy0XDvgv",
+    imageUrl:
+      "https://yt3.googleusercontent.com/ytc/AIdro_laV8C0pgic2rEoJyNW42Yr-zyEBbz2s63adl4WGqrvfg=s900-c-k-c0x00ffffff-no-rj",
+  },
+        {
+    title: "Umair",
+    country:"pakistani",
+    details:
+      "Umair is a 26 year old Pakistani singer-songwriter from Karachi. He began his career in 2018, releasing his debut album “The Journey”. Since then, he has become one of Pakistan’s most successful artists.",
+    link: "https://open.spotify.com/artist/1n6pjRJkTY5v8RtUCAv5pi",
+    imageUrl:
+      "https://yt3.googleusercontent.com/x1D9cFXbJzFeEZu_DUb0AQfSQL-JZkh67-CzkcYRt9-0sp1pQGu3z4QC7SITUBH7XGH1DYw_Wg=s900-c-k-c0x00ffffff-no-rj",
+  },
+        {
     title: "Abdullah Malik",
     country:"pakistani",
     details:
