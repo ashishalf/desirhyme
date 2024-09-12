@@ -1,4 +1,3 @@
-// src/components/Indian.jsx
 import React, { useEffect, useState } from "react";
 import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
 import spotify from "../assets/spotify.png";
@@ -7,28 +6,54 @@ import { Query } from 'appwrite'; // Import Query
 
 function Indian() {
   const [artists, setArtists] = useState([]);
+  const [hasMore, setHasMore] = useState(true); // Flag to determine if more data is available
+  const [loading, setLoading] = useState(false); // Flag to show loading state
+  const [offset, setOffset] = useState(0); // Offset for pagination
+  const limit = 30; // Number of documents to fetch per request
+
   const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
   useEffect(() => {
-    // Fetch data from Appwrite
     const fetchData = async () => {
+      if (loading) return;
+
+      setLoading(true);
       try {
         const response = await databases.listDocuments(databaseId, collectionId, [
-          // Add any filters or queries here if needed
-          Query.equal('country', 'indian') // Adjust the query as needed
-          Query.orderDesc('createdAt'), // Sort by createdAt in descending order
-          Query.limit(10) // Limit to 10 documents
-
+          Query.equal('country', 'indian'), // Adjust the query as needed
+          Query.limit(limit), // Limit the number of documents per request
+          Query.offset(offset), // Offset for pagination
         ]);
-        setArtists(response.documents);
+
+        // Check if there are more documents to fetch
+        if (response.documents.length < limit) {
+          setHasMore(false);
+        }
+
+        setArtists(prevArtists => [...prevArtists, ...response.documents]);
+        setOffset(prevOffset => prevOffset + limit); // Update offset for the next request
       } catch (error) {
         console.error("Error fetching data from Appwrite:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, [databaseId, collectionId]);
+  }, [databaseId, collectionId, offset, loading]);
+
+  // Load more data when scrolling to the bottom of the page (infinite scroll)
+  const handleScroll = () => {
+    if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight && hasMore) {
+      setLoading(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
   return (
     <>
@@ -98,6 +123,8 @@ function Indian() {
           </div>
         </div>
       ))}
+      {loading && <p>Loading...</p>}
+      {!hasMore && <p>No more data available</p>}
     </>
   );
 }
