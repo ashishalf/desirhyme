@@ -6,24 +6,52 @@ import { Query } from 'appwrite'; // Import Query
 
 function IndianMobile() {
   const [artists, setArtists] = useState([]);
+  const [hasMore, setHasMore] = useState(true); // Flag to determine if more data is available
+  const [loading, setLoading] = useState(false); // Flag to show loading state
+  const [offset, setOffset] = useState(0); // Offset for pagination
+  const limit = 30; // Number of documents to fetch per request
+
   const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
   useEffect(() => {
-    // Fetch data from Appwrite
     const fetchData = async () => {
+      if (loading) return;
+
+      setLoading(true);
       try {
         const response = await databases.listDocuments(databaseId, collectionId, [
-          Query.equal('country', 'indian') // Adjust the query as needed
+          Query.equal('country', 'indian'), // Adjust the query as needed
+          Query.limit(limit), // Limit the number of documents per request
+          Query.offset(offset), // Offset for pagination
         ]);
-        setArtists(response.documents);
+
+        if (response.documents.length < limit) {
+          setHasMore(false); // No more data to fetch
+        }
+
+        setArtists(prevArtists => [...prevArtists, ...response.documents]);
+        setOffset(prevOffset => prevOffset + limit); // Update offset for the next request
       } catch (error) {
         console.error("Error fetching data from Appwrite:", error);
+      } finally {
+        setLoading(false);
       }
     };
 
     fetchData();
-  }, [databaseId, collectionId]);
+  }, [databaseId, collectionId, offset, loading]);
+
+  const handleScroll = () => {
+    if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight && hasMore) {
+      setLoading(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
 
   return (
     <>
@@ -70,7 +98,13 @@ function IndianMobile() {
             >
               {item.details}
             </p>
-            <button style={{ borderRadius: "50px", padding: "12px 20px", background:'#1ED760', }}>
+            <button
+              style={{
+                borderRadius: "50px",
+                padding: "12px 20px",
+                background: '#1ED760',
+              }}
+            >
               <Link className="link" to={item.link}>
                 <img style={{ width: "80px" }} src={spotify} alt="Spotify" />
               </Link>
@@ -78,6 +112,8 @@ function IndianMobile() {
           </div>
         </div>
       ))}
+      {loading && <p>Loading...</p>}
+      {!hasMore && <p>No more data available</p>}
     </>
   );
 }
