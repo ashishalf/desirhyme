@@ -123,8 +123,6 @@ function Indian() {
           </div>
         </div>
       ))}
-      {loading && <p>Loading...</p>}
-      {!hasMore && <p>No more data available</p>}
     </>
   );
 }
