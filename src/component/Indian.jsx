@@ -18,13 +18,7 @@ function Indian() {
           // Add any filters or queries here if needed
           Query.equal('country', 'indian') // Adjust the query as needed
         ]);
-       const documents = response.documents;
-
-        // Shuffle and slice the documents
-        const shuffledDocuments = documents.sort(() => Math.random() - 0.5);
-        const subset = shuffledDocuments.slice(0, 5); // Adjust number as needed
-
-        setItems(subset);
+        setArtists(response.documents);
       } catch (error) {
         console.error("Error fetching data from Appwrite:", error);
       }
