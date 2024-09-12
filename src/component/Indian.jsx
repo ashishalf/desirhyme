@@ -18,7 +18,9 @@ function Indian() {
           // Add any filters or queries here if needed
           Query.equal('country', 'indian') // Adjust the query as needed
         ]);
-        setArtists(response.documents);
+        const sortedDocuments = response.documents.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
+
+        setArtists(sortedDocuments);
       } catch (error) {
         console.error("Error fetching data from Appwrite:", error);
       }
