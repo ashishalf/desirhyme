@@ -17,6 +17,9 @@ function Indian() {
         const response = await databases.listDocuments(databaseId, collectionId, [
           // Add any filters or queries here if needed
           Query.equal('country', 'indian') // Adjust the query as needed
+          Query.orderDesc('createdAt'), // Sort by createdAt in descending order
+          Query.limit(10) // Limit to 10 documents
+
         ]);
         setArtists(response.documents);
       } catch (error) {
