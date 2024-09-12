@@ -14,14 +14,7 @@ function ObjectRenderer() {
     const fetchData = async () => {
       try {
         const response = await databases.listDocuments(databaseId, collectionId);
-       const documents = response.documents;
-
-        // Shuffle documents
-        const shuffledDocuments = documents.sort(() => Math.random() - 0.5);
-
-        // Select a subset of documents
-        const randomSubset = shuffledDocuments.slice(5, 10);
-        setItems(randomSubset);
+       setItems(response.documents);
       } catch (error) {
         console.error("Error fetching data from Appwrite:", error);
       }
@@ -97,7 +90,7 @@ function ObjectRenderer() {
             </button>
           </div>
         </div>
-      )).slice(5, 10)}
+      ))}
     </>
   );
 }
