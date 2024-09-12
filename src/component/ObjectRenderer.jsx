@@ -1,13 +1,31 @@
-import React from "react";
-import data from "../data";
+import React, { useEffect, useState } from "react";
+import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
+import { Query } from 'appwrite'; // Import Query
 
 function ObjectRenderer() {
- 
+  const [items, setItems] = useState([]);
+  const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
+  const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
+
+  useEffect(() => {
+    // Fetch data from Appwrite
+    const fetchData = async () => {
+      try {
+        const response = await databases.listDocuments(databaseId, collectionId);
+        setItems(response.documents);
+      } catch (error) {
+        console.error("Error fetching data from Appwrite:", error);
+      }
+    };
+
+    fetchData();
+  }, [databaseId, collectionId]);
+
   return (
     <>
-      {data.map((item, index) => (
+      {items.slice(5, 10).map((item, index) => (
         <div
           key={index}
           style={{
@@ -63,17 +81,16 @@ function ObjectRenderer() {
                 borderRadius: "50px",
                 padding: "16px 30px",
                 marginBottom: "20px",
-                background:'#1ED760',
+                background: '#1ED760',
               }}
             >
-            <Link className="link" to={item.link}>
-              
+              <Link className="link" to={item.link}>
                 <img style={{ width: "120px" }} src={spotify} alt="Spotify" />
               </Link>
             </button>
           </div>
         </div>
-      )).sort(() => Math.random() - 0.5).slice(0, 10)}
+      ))}
     </>
   );
 }

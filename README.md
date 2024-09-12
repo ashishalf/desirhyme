@@ -1,6 +1,6 @@
 # DesiRhyme
 
-Welcome to the DesiRhyme for Indian and Pakistani rappers! This static website is built using React, providing a platform to explore the vibrant Hip-hop culture of India and Pakistan. Whether you're a fan, artist, or just curious about the scene, this website is designed to keep you informed and entertained.
+Welcome to the DesiRhyme for Indian and Pakistani rappers! This static website is built using React and Appwrite, providing a platform to explore the vibrant Hip-hop culture of India and Pakistan. Whether you're a fan, artist, or just curious about the scene, this website is designed to keep you informed and entertained.
 
 ## Features
 - **Rapper Profiles**: Explore the profiles of Indian and Pakistani rappers, including their biographies, discographies, and social media links.

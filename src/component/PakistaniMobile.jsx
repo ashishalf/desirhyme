@@ -1,14 +1,33 @@
-import React from "react";
-import data from "../data";
+import React, { useEffect, useState } from "react";
+import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
+import { Query } from 'appwrite'; // Import Query
 
 function PakistaniMobile() {
-  const PakistaniArtists = data.filter(artist => artist.country === "pakistani")
+  const [artists, setArtists] = useState([]);
+  const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
+  const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
+
+  useEffect(() => {
+    // Fetch data from Appwrite
+    const fetchData = async () => {
+      try {
+        const response = await databases.listDocuments(databaseId, collectionId, [
+          Query.equal('country', 'pakistani') // Adjust the query as needed
+        ]);
+        setArtists(response.documents);
+      } catch (error) {
+        console.error("Error fetching data from Appwrite:", error);
+      }
+    };
+
+    fetchData();
+  }, [databaseId, collectionId]);
 
   return (
     <>
-      {PakistaniArtists.map((item, index) => (
+      {artists.map((item, index) => (
         <div
           key={index}
           style={{
