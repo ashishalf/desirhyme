@@ -25,7 +25,7 @@ function ObjectRenderer() {
 
   return (
     <>
-      {items.slice(5, 10).map((item, index) => (
+      {items.map((item, index) => (
         <div
           key={index}
           style={{
@@ -90,7 +90,7 @@ function ObjectRenderer() {
             </button>
           </div>
         </div>
-      ))}
+      )).slice(5, 10)}
     </>
   );
 }
