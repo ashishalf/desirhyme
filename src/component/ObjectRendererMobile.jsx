@@ -9,11 +9,16 @@ function ObjectRendererMobile() {
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
   useEffect(() => {
-    // Fetch data from Appwrite
     const fetchData = async () => {
       try {
         const response = await databases.listDocuments(databaseId, collectionId);
-        setItems(response.documents);
+        const documents = response.documents;
+
+        // Shuffle and slice the documents
+        const shuffledDocuments = documents.sort(() => Math.random() - 0.5);
+        const subset = shuffledDocuments.slice(0, 5); // Adjust number as needed
+
+        setItems(subset);
       } catch (error) {
         console.error("Error fetching data from Appwrite:", error);
       }
@@ -28,18 +33,18 @@ function ObjectRendererMobile() {
         <div
           key={index}
           style={{
-            margin: "20px 10px", // Adjust margins for mobile
+            margin: "20px 10px",
             background: "black",
             borderRadius: "10px",
             display: "flex",
-            flexDirection: "column", // Stack items vertically on mobile
+            flexDirection: "column",
             padding: "20px",
           }}
         >
           <div>
             <img
               style={{
-                width: "100%", // Adjust the width for mobile
+                width: "100%",
                 borderRadius: "10px",
                 objectFit: "cover",
               }}
@@ -50,8 +55,8 @@ function ObjectRendererMobile() {
           </div>
           <div
             style={{
-              textAlign: "center", // Center text on mobile
-              margin: "20px 0", // Adjust margin for mobile
+              textAlign: "center",
+              margin: "20px 0",
             }}
           >
             <h1 className="title" style={{ fontSize: "24px", color: "white" }}>
@@ -67,20 +72,14 @@ function ObjectRendererMobile() {
             >
               {item.details}
             </p>
-            <button
-              style={{
-                borderRadius: "50px",
-                padding: "12px 20px",
-                background: '#1ED760',
-              }}
-            >
+            <button style={{ borderRadius: "50px", padding: "12px 20px", background:'#1ED760' }}>
               <Link className="link" to={item.link}>
                 <img style={{ width: "80px" }} src={spotify} alt="Spotify" />
               </Link>
             </button>
           </div>
         </div>
-      )).slice(5, 10)}
+      ))}
     </>
   );
 }
