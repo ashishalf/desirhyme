@@ -14,7 +14,8 @@ function PakistaniMobile() {
     const fetchData = async () => {
       try {
         const response = await databases.listDocuments(databaseId, collectionId, [
-          Query.equal('country', 'pakistani') // Adjust the query as needed
+          Query.equal('country', 'pakistani'),
+          Query.orderDesc("createdAt")// Adjust the query as needed
         ]);
         setArtists(response.documents);
       } catch (error) {
