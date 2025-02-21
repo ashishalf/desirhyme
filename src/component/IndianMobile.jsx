@@ -1,77 +1,81 @@
-import React, { useEffect, useState } from "react";
-import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
+import React, { useEffect, useState, useCallback } from "react";
+import { databases } from "../appwrite/appwrite";
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
-import { Query } from 'appwrite'; // Import Query
+import { Query } from "appwrite";
 
 function IndianMobile() {
   const [artists, setArtists] = useState([]);
-  const [hasMore, setHasMore] = useState(true); // Flag to determine if more data is available
-  const [loading, setLoading] = useState(false); // Flag to show loading state
-  const [offset, setOffset] = useState(0); // Offset for pagination
-  const limit = 30; // Number of documents to fetch per request
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const limit = 30;
 
   const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      if (loading) return;
+  const fetchData = async () => {
+    if (loading || !hasMore) return;
 
-      setLoading(true);
-      try {
-        const response = await databases.listDocuments(databaseId, collectionId, [
-          Query.equal('country', 'indian'), // Adjust the query as needed
-          Query.limit(limit), // Limit the number of documents per request
-          Query.offset(offset),
-          Query.orderDesc("createdAt")// Offset for pagination
-        ]);
+    setLoading(true);
+    try {
+      const response = await databases.listDocuments(databaseId, collectionId, [
+        Query.equal("country", "indian"),
+        Query.limit(limit),
+        Query.offset(offset),
+        Query.orderDesc("$createdAt"), // Corrected ordering field
+      ]);
 
-        if (response.documents.length < limit) {
-          setHasMore(false); // No more data to fetch
-        }
+      setArtists((prevArtists) => [...prevArtists, ...response.documents]);
 
-        setArtists(prevArtists => [...prevArtists, ...response.documents]);
-        setOffset(prevOffset => prevOffset + limit); // Update offset for the next request
-      } catch (error) {
-        console.error("Error fetching data from Appwrite:", error);
-      } finally {
-        setLoading(false);
+      if (response.documents.length < limit) {
+        setHasMore(false);
       }
-    };
 
-    fetchData();
-  }, [databaseId, collectionId, offset, loading]);
-
-  const handleScroll = () => {
-    if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight && hasMore) {
-      setLoading(true);
+      setOffset((prevOffset) => prevOffset + limit);
+    } catch (error) {
+      console.error("Error fetching data from Appwrite:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    fetchData();
+  }, []); // Fetch only on mount
+
+  const handleScroll = useCallback(() => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop >=
+      document.documentElement.offsetHeight - 10
+    ) {
+      fetchData();
+    }
+  }, [fetchData]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   return (
     <>
-      {artists.map((item, index) => (
+      {artists.map((item) => (
         <div
-          key={index}
+          key={item.$id} // Use unique document ID
           style={{
-            margin: "20px 10px", // Adjust margins for mobile
+            margin: "20px 10px",
             background: "black",
             borderRadius: "10px",
             display: "flex",
-            flexDirection: "column", // Stack items vertically on mobile
+            flexDirection: "column",
             padding: "20px",
           }}
         >
           <div>
             <img
               style={{
-                width: "100%", // Adjust the width for mobile
+                width: "100%",
                 borderRadius: "10px",
                 objectFit: "cover",
               }}
@@ -82,8 +86,8 @@ function IndianMobile() {
           </div>
           <div
             style={{
-              textAlign: "center", // Center text on mobile
-              margin: "20px 0", // Adjust margin for mobile
+              textAlign: "center",
+              margin: "20px 0",
             }}
           >
             <h1 className="title" style={{ fontSize: "24px", color: "white" }}>
@@ -103,7 +107,7 @@ function IndianMobile() {
               style={{
                 borderRadius: "50px",
                 padding: "12px 20px",
-                background: '#1ED760',
+                background: "#1ED760",
               }}
             >
               <Link className="link" to={item.link}>
@@ -113,6 +117,7 @@ function IndianMobile() {
           </div>
         </div>
       ))}
+      {loading && <p style={{ color: "white", textAlign: "center" }}>Loading...</p>}
     </>
   );
 }
