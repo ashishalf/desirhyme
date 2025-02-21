@@ -23,7 +23,8 @@ function Indian() {
         const response = await databases.listDocuments(databaseId, collectionId, [
           Query.equal('country', 'indian'), // Adjust the query as needed
           Query.limit(limit), // Limit the number of documents per request
-          Query.offset(offset), // Offset for pagination
+          Query.offset(offset),
+          Query.orderDesc("createdAt")// Offset for pagination
         ]);
 
         // Check if there are more documents to fetch
