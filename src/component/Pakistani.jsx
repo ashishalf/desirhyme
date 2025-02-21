@@ -1,36 +1,54 @@
 import React, { useEffect, useState } from "react";
-import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
+import { databases } from "../appwrite/appwrite"; 
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
-import { Query } from 'appwrite'; // Import Query
+import { Query } from "appwrite";
 
 function Pakistani() {
   const [artists, setArtists] = useState([]);
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const limit = 30; // Adjust limit as needed
+
   const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
-  useEffect(() => {
-    // Fetch data from Appwrite
-    const fetchData = async () => {
-      try {
-        const response = await databases.listDocuments(databaseId, collectionId, [
-          Query.equal('country', 'pakistani'),
-          Query.orderDesc("createdAt")// Adjust the query as needed
-        ]);
-        setArtists(response.documents);
-      } catch (error) {
-        console.error("Error fetching data from Appwrite:", error);
-      }
-    };
+  const fetchData = async () => {
+    if (loading || !hasMore) return;
 
+    setLoading(true);
+    try {
+      const response = await databases.listDocuments(databaseId, collectionId, [
+        Query.equal("country", "pakistani"),
+        Query.limit(limit),
+        Query.offset(offset),
+        Query.orderDesc("$createdAt"),
+      ]);
+
+      setArtists((prevArtists) => [...prevArtists, ...response.documents]);
+
+      if (response.documents.length < limit) {
+        setHasMore(false);
+      }
+
+      setOffset((prevOffset) => prevOffset + limit);
+    } catch (error) {
+      console.error("Error fetching data from Appwrite:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
     fetchData();
-  }, [databaseId, collectionId]);
+  }, []); // Fetch only on mount
 
   return (
     <>
-      {artists.map((item, index) => (
+      {artists.map((item) => (
         <div
-          key={index}
+          key={item.$id} // Unique key
           style={{
             margin: "50px 100px",
             background: "black",
@@ -48,7 +66,7 @@ function Pakistani() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              width: "50%", // Adjust the width as needed
+              width: "50%",
             }}
           >
             <img
@@ -84,7 +102,7 @@ function Pakistani() {
                 borderRadius: "50px",
                 padding: "16px 30px",
                 marginBottom: "20px",
-                background:'#1ED760',
+                background: "#1ED760",
               }}
             >
               <Link className="link" to={item.link}>
@@ -94,6 +112,7 @@ function Pakistani() {
           </div>
         </div>
       ))}
+      {loading && <p style={{ color: "white", textAlign: "center" }}>Loading...</p>}
     </>
   );
 }
