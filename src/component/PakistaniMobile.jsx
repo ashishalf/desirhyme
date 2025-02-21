@@ -1,49 +1,67 @@
 import React, { useEffect, useState } from "react";
-import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
+import { databases } from "../appwrite/appwrite"; 
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
-import { Query } from 'appwrite'; // Import Query
+import { Query } from "appwrite";
 
 function PakistaniMobile() {
   const [artists, setArtists] = useState([]);
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const limit = 20; // Adjust limit as needed
+
   const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
-  useEffect(() => {
-    // Fetch data from Appwrite
-    const fetchData = async () => {
-      try {
-        const response = await databases.listDocuments(databaseId, collectionId, [
-          Query.equal('country', 'pakistani'),
-          Query.orderDesc("createdAt")// Adjust the query as needed
-        ]);
-        setArtists(response.documents);
-      } catch (error) {
-        console.error("Error fetching data from Appwrite:", error);
-      }
-    };
+  const fetchData = async () => {
+    if (loading || !hasMore) return;
 
+    setLoading(true);
+    try {
+      const response = await databases.listDocuments(databaseId, collectionId, [
+        Query.equal("country", "pakistani"),
+        Query.limit(limit),
+        Query.offset(offset),
+        Query.orderDesc("$createdAt"),
+      ]);
+
+      setArtists((prevArtists) => [...prevArtists, ...response.documents]);
+
+      if (response.documents.length < limit) {
+        setHasMore(false);
+      }
+
+      setOffset((prevOffset) => prevOffset + limit);
+    } catch (error) {
+      console.error("Error fetching data from Appwrite:", error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
     fetchData();
-  }, [databaseId, collectionId]);
+  }, []); // Fetch only on mount
 
   return (
     <>
-      {artists.map((item, index) => (
+      {artists.map((item) => (
         <div
-          key={index}
+          key={item.$id} // Unique key
           style={{
-            margin: "20px 10px", // Adjust margins for mobile
+            margin: "20px 10px",
             background: "black",
             borderRadius: "10px",
             display: "flex",
-            flexDirection: "column", // Stack items vertically on mobile
+            flexDirection: "column",
             padding: "20px",
           }}
         >
           <div>
             <img
               style={{
-                width: "100%", // Adjust the width for mobile
+                width: "100%",
                 borderRadius: "10px",
                 objectFit: "cover",
               }}
@@ -54,8 +72,8 @@ function PakistaniMobile() {
           </div>
           <div
             style={{
-              textAlign: "center", // Center text on mobile
-              margin: "20px 0", // Adjust margin for mobile
+              textAlign: "center",
+              margin: "20px 0",
             }}
           >
             <h1 className="title" style={{ fontSize: "24px", color: "white" }}>
@@ -71,7 +89,13 @@ function PakistaniMobile() {
             >
               {item.details}
             </p>
-            <button style={{ borderRadius: "50px", padding: "12px 20px", background:'#1ED760', }}>
+            <button
+              style={{
+                borderRadius: "50px",
+                padding: "12px 20px",
+                background: "#1ED760",
+              }}
+            >
               <Link className="link" to={item.link}>
                 <img style={{ width: "80px" }} src={spotify} alt="Spotify" />
               </Link>
@@ -79,6 +103,7 @@ function PakistaniMobile() {
           </div>
         </div>
       ))}
+      {loading && <p style={{ color: "white", textAlign: "center" }}>Loading...</p>}
     </>
   );
 }
