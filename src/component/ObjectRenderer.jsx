@@ -18,7 +18,7 @@ function ObjectRenderer() {
 
         // Shuffle and slice the documents
         const shuffledDocuments = documents.sort(() => Math.random() - 0.5);
-        const subset = shuffledDocuments.slice(0, 5); // Adjust number as needed
+        const subset = shuffledDocuments.slice(0, 10); // Adjust number as needed
 
         setItems(subset);
       } catch (error) {
