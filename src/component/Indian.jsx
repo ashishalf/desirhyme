@@ -1,66 +1,71 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import { databases } from "../appwrite/appwrite"; // Import Appwrite database instance
 import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
-import { Query } from 'appwrite'; // Import Query
+import { Query } from "appwrite"; // Import Query
 
 function Indian() {
   const [artists, setArtists] = useState([]);
-  const [hasMore, setHasMore] = useState(true); // Flag to determine if more data is available
-  const [loading, setLoading] = useState(false); // Flag to show loading state
-  const [offset, setOffset] = useState(0); // Offset for pagination
-  const limit = 30; // Number of documents to fetch per request
+  const [hasMore, setHasMore] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [offset, setOffset] = useState(0);
+  const limit = 30;
 
   const databaseId = import.meta.env.VITE_APPWRITE_DATABASE_ID;
   const collectionId = import.meta.env.VITE_APPWRITE_COLLECTION_ID;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      if (loading) return;
+  const fetchData = async () => {
+    if (loading || !hasMore) return; // Prevent duplicate calls
 
-      setLoading(true);
-      try {
-        const response = await databases.listDocuments(databaseId, collectionId, [
-          Query.equal('country', 'indian'), // Adjust the query as needed
-          Query.limit(limit), // Limit the number of documents per request
-          Query.offset(offset),
-          Query.orderDesc("Created")// Offset for pagination
-        ]);
+    setLoading(true);
+    try {
+      const response = await databases.listDocuments(databaseId, collectionId, [
+        Query.equal("country", "indian"), // Fetch only Indian artists
+        Query.limit(limit),
+        Query.offset(offset),
+        Query.orderDesc("$createdAt"), // Use "$createdAt" if "Created" is not working
+      ]);
 
-        // Check if there are more documents to fetch
-        if (response.documents.length < limit) {
-          setHasMore(false);
-        }
+      // Append new documents
+      setArtists((prevArtists) => [...prevArtists, ...response.documents]);
 
-        setArtists(prevArtists => [...prevArtists, ...response.documents]);
-        setOffset(prevOffset => prevOffset + limit); // Update offset for the next request
-      } catch (error) {
-        console.error("Error fetching data from Appwrite:", error);
-      } finally {
-        setLoading(false);
+      // Check if there are more documents
+      if (response.documents.length < limit) {
+        setHasMore(false);
       }
-    };
 
-    fetchData();
-  }, [databaseId, collectionId, offset, loading]);
-
-  // Load more data when scrolling to the bottom of the page (infinite scroll)
-  const handleScroll = () => {
-    if (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight && hasMore) {
-      setLoading(true);
+      setOffset((prevOffset) => prevOffset + limit);
+    } catch (error) {
+      console.error("Error fetching data from Appwrite:", error);
+    } finally {
+      setLoading(false);
     }
   };
 
+  // Load more when user scrolls to the bottom
+  const handleScroll = useCallback(() => {
+    if (
+      window.innerHeight + document.documentElement.scrollTop >=
+      document.documentElement.offsetHeight - 10
+    ) {
+      fetchData();
+    }
+  }, [fetchData]);
+
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    fetchData(); // Fetch initial data
+  }, []); // Only run on mount
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [handleScroll]);
 
   return (
     <>
       {artists.map((item, index) => (
         <div
-          key={index}
+          key={item.$id} // Use unique ID instead of index
           style={{
             margin: "50px 100px",
             background: "black",
@@ -78,7 +83,7 @@ function Indian() {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              width: "50%", // Adjust the width as needed
+              width: "50%",
             }}
           >
             <img
@@ -114,7 +119,7 @@ function Indian() {
                 borderRadius: "50px",
                 padding: "16px 30px",
                 marginBottom: "20px",
-                background: '#1ED760',
+                background: "#1ED760",
               }}
             >
               <Link className="link" to={item.link}>
@@ -124,6 +129,7 @@ function Indian() {
           </div>
         </div>
       ))}
+      {loading && <p style={{ color: "white", textAlign: "center" }}>Loading...</p>}
     </>
   );
 }
