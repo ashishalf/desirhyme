@@ -13,12 +13,12 @@ function Header() {
             desiRhyme <br /> <span style={{ fontSize: isMobile ? '10px' : '15px' }}>by @ashishalf</span>
           </h2>
         </div>
-        <Link to="https://github.com/ashishalf/hiphop/blob/main/README.md">
+        <Link to="https://open.spotify.com/playlist/24QyAedxzc1U0bxV6eFoSX?si=ced57226d9f145c6">
           <img
             width={isMobile ? 40 : 58}
             height={isMobile ? 40 : 58}
-            src="https://img.icons8.com/3d-fluency/94/github.png"
-            alt="github"
+            src="https://img.icons8.com/3d-fluency/94/spotify.png"
+            alt="spotify"
           />
         </Link>
       </div>
