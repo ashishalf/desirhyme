@@ -6,7 +6,7 @@ import "./App.css";
 import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Layout from './Layout.jsx';
 import Indian from "./component/Indian";
-import Pakistani from "./component/Pakistani";
+import International from "./component/International.jsx";
 
 function App() {
 

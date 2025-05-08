@@ -7,8 +7,8 @@ import { Route, RouterProvider, Routes, createBrowserRouter, createRoutesFromEle
 import Layout from './Layout.jsx';
 import Indian from "./component/Indian";
 import IndianMobile from "./component/IndianMobile";
-import Pakistani from "./component/Pakistani";
-import PakistaniMobile from "./component/PakistaniMobile";
+import International from "./component/International.jsx";
+import InternationalMobile from "./component/InternationalMobile.jsx";
 
 
 const isMobile = window.innerWidth <= 768;
@@ -18,7 +18,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={isMobile ? <ObjectRendererMobile /> : <ObjectRenderer />} />
       <Route path='indian' element={isMobile ?  <IndianMobile /> : <Indian />} />
-      <Route path='pakistani' element={isMobile ?  <PakistaniMobile /> : <Pakistani />} />
+      <Route path='international' element={isMobile ?  <InternationalMobile /> : <International />} />
     </Route>
   )
 )

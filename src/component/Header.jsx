@@ -35,12 +35,12 @@ function Header() {
           No Limits, Just Lyrics
         </h1>
         <p style={{ textAlign: 'center', fontSize: isMobile ? '15px' : '36px', fontFamily: 'Montserrat', marginBottom:'50px'}}>
-          Exploring the Dynamic World of Indian and Pakistani Rappers.
+          Exploring the Dynamic World of Indian and International Rappers.
         </p>
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap:'20px', paddingBottom:isMobile ? '20px' : '20px'}}>
   <Link to="/indian" style={{color:'white', textDecoration:"none"}}>Indian</Link>
-  <Link to="/pakistani" style={{color:'white', textDecoration:"none"}}>Pakistani</Link>
+  <Link to="/international" style={{color:'white', textDecoration:"none"}}>International</Link>
 </div>
 
     </>

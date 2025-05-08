@@ -4,7 +4,7 @@ import spotify from "../assets/spotify.png";
 import { Link } from "react-router-dom";
 import { Query } from "appwrite";
 
-function Pakistani() {
+function International() {
   const [artists, setArtists] = useState([]);
   const [hasMore, setHasMore] = useState(true);
   const [loading, setLoading] = useState(false);
@@ -20,7 +20,7 @@ function Pakistani() {
     setLoading(true);
     try {
       const response = await databases.listDocuments(databaseId, collectionId, [
-        Query.equal("country", "pakistani"),
+        Query.equal("country", "international"),
         Query.limit(limit),
         Query.offset(offset),
         Query.orderDesc("$createdAt"),
@@ -117,4 +117,4 @@ function Pakistani() {
   );
 }
 
-export default Pakistani;
+export default International;
